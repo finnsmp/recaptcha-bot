@@ -9,7 +9,9 @@ A bot to protect from bots to do botting, and verify new member's humanity.
 2. copy this and paste it in: `git clone https://github.com/finnsmp/recaptcha-bot.git && cd recaptcha-bot && npm i`
 3. rename the file "dotenv" to just `.env` and add your details.
 ###### how to get discord token
-> site: https://discord.com/developers/applications  
+> site: https://discord.com/developers/applications 
+![discordbot](https://user-images.githubusercontent.com/77523929/118164233-b753e000-b3d7-11eb-85ab-120fa6a83005.gif)
+
 
 ###### how to get recaptcha secret and key  
 > site: https://www.google.com/recaptcha/admin  
