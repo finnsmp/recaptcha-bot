@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <!-- HTML data -->
+        <title>Captcha</title>
+        <!-- CSS file -->
+        <link type='text/css' rel="stylesheet" href="../css/style.css">
+        <!-- JavaScript files -->
+        <script type='text/javascript' src="../js/jquery.min.js"></script>
+        <script type='text/javascript' src="../js/particleground.min.js"></script>
+        <script type='text/javascript' src="../js/particles.js"></script>
+        <!-- reCAPTCHA JavaScript file -->
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    </head>
+    <!---->
+    <meta id="image-src" content="https://i.imgur.com/fWCPISQ.png">
+<meta id="embed-image" property="og:image" content="https://i.imgur.com/fWCPISQ.png">
+<meta property="og:image" content="https://i.imgur.com/fWCPISQ.png">
+<meta property="og:title" content="FinnSMP Captcha Verification">
+<meta id="embed-title" property="og:title" content="FinnSMP Captcha Verification">
+<meta id="embed-desc" property="og:description" content="Click the link to be taken to our Captcha web portal and verify your humanity.">
+<meta property="og:description" content="Click the link to be taken to our Captcha web portal and verify your humanity.">
+<meta property="og:locale" content="en_US">
+<!---->
+    <body>
+        <div id="particles"></div>
+        <div id="app">
+            <!-- reCAPTCHA form -->
+            <form action="?" method="POST" id="reCAPTCHA">
+                <div class="g-recaptcha" data-sitekey="6LdCjNIaAAAAAIMon7pR9C78c0jgC0g0smN1n2US" data-callback="onSubmit"></div>
+            </form>
+        </div>
+        <!-- reCAPTCHA callback function -->
+        <script>
+            function onSubmit() {
+                document.getElementById("reCAPTCHA").submit(); 
+            }
+        </script>
+    </body>
+</html>
